@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+
+.flex-container-row {
+    display: flex;
+}
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+  
+    /* properti pendukung */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+.button {
+    flex-basis: 25%;
+   
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+     
+}
+/* .double {
+    flex-basis: 50%;
+} */
+
+
+ /* Warna */
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333333;
+    border: 1px solid black;
+    font-size: 2em;
+}
+ .operator,
+.negative,
+.equals,
+.clear {
+   background: orange;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+    background: linear-gradient(-45deg, #214155, #121312, #5133);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+.button:hover {
+    font-weight: bold;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+ }
